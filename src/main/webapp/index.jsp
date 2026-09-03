@@ -6,11 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<<<<<<< HEAD
-<title>Foody buddy </title>
-=======
-<title>Welcome to Foody buddy Service</title>
->>>>>>> 94bf2da (Meta title has been updated)
+<title>welcome to Foody buddy Service</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
