@@ -1,11 +1,12 @@
-<html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gen Z Shopping Portal</title>
+<title>QuickBite - Fast Food Delivery</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
@@ -19,12 +20,13 @@
 ========================================================= */
 
 :root {
-    --primary: #171725;
-    --primary-soft: #27273a;
 
-    --accent: #e56b4f;
-    --accent-dark: #c95036;
-    --accent-light: #fff0eb;
+    --primary: #171725;
+    --primary-soft: #29293b;
+
+    --accent: #f05a3c;
+    --accent-dark: #d94528;
+    --accent-light: #fff0ec;
 
     --bg: #f8f8f6;
     --white: #ffffff;
@@ -36,7 +38,7 @@
     --border: #eeeeec;
 
     --success: #27a58e;
-    --warning: #f3c969;
+    --warning: #f5c451;
 
     --radius: 16px;
     --radius-sm: 10px;
@@ -110,7 +112,7 @@ img {
 }
 
 .top-bar strong {
-    color: #ffd7cc;
+    color: #ffb39f;
 }
 
 
@@ -119,40 +121,54 @@ img {
 ========================================================= */
 
 header {
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
+
     background: rgba(255,255,255,.96);
+
     backdrop-filter: blur(15px);
+
     border-bottom: 1px solid var(--border);
 }
 
 .header-main {
+
     min-height: 72px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
-    gap: 25px;
+    gap: 20px;
 }
 
 
 /* LOGO */
 
 .logo {
+
     display: flex;
+
     align-items: center;
+
     gap: 9px;
 
     font-size: 22px;
+
     font-weight: 800;
 
     white-space: nowrap;
 }
 
 .logo i {
+
     color: var(--accent);
+
     font-size: 25px;
 }
 
@@ -164,17 +180,24 @@ header {
 /* NAV */
 
 .nav-links {
+
     display: flex;
+
     align-items: center;
+
     gap: 4px;
 }
 
 .nav-links a {
+
     padding: 9px 13px;
+
     border-radius: 8px;
 
     color: var(--muted);
+
     font-size: 14px;
+
     font-weight: 500;
 
     transition: var(--transition);
@@ -182,7 +205,9 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
+
     color: var(--text);
+
     background: #f3f3f1;
 }
 
@@ -190,7 +215,9 @@ header {
 /* SEARCH */
 
 .search-box {
+
     display: flex;
+
     align-items: center;
 
     background: #f4f4f2;
@@ -199,7 +226,7 @@ header {
 
     border-radius: 999px;
 
-    width: 280px;
+    width: 260px;
 
     padding: 0 15px;
 
@@ -207,7 +234,9 @@ header {
 }
 
 .search-box:focus-within {
+
     background: white;
+
     border-color: var(--accent);
 }
 
@@ -216,9 +245,11 @@ header {
 }
 
 .search-box input {
+
     width: 100%;
 
     border: none;
+
     outline: none;
 
     background: transparent;
@@ -232,18 +263,23 @@ header {
 /* HEADER ACTIONS */
 
 .header-actions {
+
     display: flex;
+
     align-items: center;
+
     gap: 5px;
 }
 
 .icon-btn {
+
     width: 40px;
     height: 40px;
 
     border-radius: 50%;
 
     border: none;
+
     background: transparent;
 
     color: var(--muted);
@@ -256,11 +292,14 @@ header {
 }
 
 .icon-btn:hover {
+
     background: #f2f2f0;
+
     color: var(--accent);
 }
 
 .cart-count {
+
     position: absolute;
 
     top: -1px;
@@ -270,27 +309,32 @@ header {
     height: 18px;
 
     background: var(--accent);
+
     color: white;
 
     border-radius: 50%;
 
     font-size: 10px;
+
     font-weight: 700;
 
     display: grid;
+
     place-items: center;
 }
 
 
-/* MOBILE MENU BUTTON */
+/* MOBILE BUTTON */
 
 .menu-btn {
+
     display: none;
 
     width: 40px;
     height: 40px;
 
     border: none;
+
     border-radius: 50%;
 
     background: #f3f3f1;
@@ -304,51 +348,64 @@ header {
 ========================================================= */
 
 .hero {
+
     margin-top: 20px;
 
-    min-height: 480px;
+    min-height: 470px;
 
     border-radius: 20px;
 
     position: relative;
+
     overflow: hidden;
 
     display: flex;
+
     align-items: center;
 }
 
 .hero-image {
+
     position: absolute;
+
     inset: 0;
 
     background:
+
         linear-gradient(
             90deg,
-            rgba(20,20,35,.95) 0%,
-            rgba(20,20,35,.75) 50%,
+            rgba(20,20,35,.94) 0%,
+            rgba(20,20,35,.78) 45%,
             rgba(20,20,35,.30) 100%
         ),
-        url("https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1600&q=85")
+
+        url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=85")
+
         center/cover;
 }
 
 .hero-content {
+
     position: relative;
+
     z-index: 2;
 
     color: white;
 
     max-width: 650px;
 
-    padding: 70px 0;
+    padding: 65px 0;
 }
 
 .hero-label {
+
     display: inline-flex;
+
     align-items: center;
+
     gap: 7px;
 
-    background: rgba(229,107,79,.18);
+    background: rgba(240,90,60,.18);
 
     color: #ffb5a2;
 
@@ -359,41 +416,83 @@ header {
     border-radius: 999px;
 
     font-size: 12px;
+
     font-weight: 700;
 
     margin-bottom: 18px;
 }
 
 .hero h1 {
+
     font-family: "Playfair Display", serif;
 
-    font-size: clamp(38px, 5vw, 62px);
+    font-size: clamp(38px,5vw,62px);
 
     line-height: 1.08;
 
     margin-bottom: 18px;
 }
 
+.hero h1 span {
+    color: #ff8d73;
+}
+
 .hero p {
+
     color: rgba(255,255,255,.78);
 
     font-size: 16px;
 
     max-width: 540px;
 
-    margin-bottom: 28px;
+    margin-bottom: 25px;
+}
+
+
+/* DELIVERY INFO */
+
+.delivery-info {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.delivery-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 12px;
+
+    color: rgba(255,255,255,.82);
+}
+
+.delivery-item i {
+    color: #ff9a83;
 }
 
 
 /* BUTTONS */
 
 .buttons {
+
     display: flex;
+
     gap: 12px;
+
     flex-wrap: wrap;
 }
 
 .btn {
+
     border: none;
 
     padding: 12px 22px;
@@ -401,10 +500,13 @@ header {
     border-radius: 999px;
 
     font-size: 14px;
+
     font-weight: 700;
 
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 8px;
@@ -413,17 +515,23 @@ header {
 }
 
 .btn-primary {
+
     background: var(--accent);
+
     color: white;
 }
 
 .btn-primary:hover {
+
     background: var(--accent-dark);
+
     transform: translateY(-2px);
 }
 
 .btn-light {
+
     background: white;
+
     color: var(--primary);
 }
 
@@ -441,9 +549,11 @@ header {
 }
 
 .section-heading {
+
     display: flex;
 
     justify-content: space-between;
+
     align-items: flex-end;
 
     margin-bottom: 28px;
@@ -452,24 +562,34 @@ header {
 }
 
 .section-heading h2 {
+
     font-size: 28px;
+
     margin-bottom: 4px;
 }
 
 .section-heading p {
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
 .view-link {
+
     color: var(--accent);
 
     font-size: 14px;
+
     font-weight: 700;
 
     display: flex;
+
     align-items: center;
+
     gap: 7px;
+
+    transition: var(--transition);
 }
 
 .view-link:hover {
@@ -482,6 +602,7 @@ header {
 ========================================================= */
 
 .categories {
+
     display: grid;
 
     grid-template-columns: repeat(6,1fr);
@@ -490,6 +611,7 @@ header {
 }
 
 .category {
+
     background: white;
 
     border: 1px solid var(--border);
@@ -506,6 +628,7 @@ header {
 }
 
 .category:hover {
+
     transform: translateY(-5px);
 
     border-color: var(--accent-light);
@@ -514,12 +637,14 @@ header {
 }
 
 .category-icon {
+
     width: 55px;
     height: 55px;
 
     margin: auto auto 12px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 50%;
@@ -534,7 +659,9 @@ header {
 }
 
 .category:hover .category-icon {
+
     background: var(--accent);
+
     color: white;
 }
 
@@ -543,6 +670,7 @@ header {
 }
 
 .category small {
+
     color: var(--muted);
 
     font-size: 12px;
@@ -554,8 +682,11 @@ header {
 ========================================================= */
 
 .product-toolbar {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     margin-bottom: 20px;
@@ -564,16 +695,21 @@ header {
 }
 
 .result-text {
+
     color: var(--muted);
+
     font-size: 13px;
 }
 
 .filter-buttons {
+
     display: flex;
+
     gap: 7px;
 }
 
 .filter-btn {
+
     padding: 7px 13px;
 
     border-radius: 999px;
@@ -585,20 +721,25 @@ header {
     font-size: 12px;
 
     color: var(--muted);
+
+    transition: var(--transition);
 }
 
 .filter-btn.active,
 .filter-btn:hover {
+
     background: var(--primary);
+
     color: white;
 }
 
 
 /* =========================================================
-   PRODUCTS
+   FOOD CARDS
 ========================================================= */
 
 .products {
+
     display: grid;
 
     grid-template-columns: repeat(4,1fr);
@@ -607,6 +748,7 @@ header {
 }
 
 .product {
+
     background: white;
 
     border-radius: var(--radius);
@@ -621,12 +763,14 @@ header {
 }
 
 .product:hover {
+
     transform: translateY(-5px);
 
     box-shadow: var(--shadow-hover);
 }
 
 .product-image {
+
     position: relative;
 
     aspect-ratio: 1/1;
@@ -637,6 +781,7 @@ header {
 }
 
 .product-image img {
+
     width: 100%;
     height: 100%;
 
@@ -646,13 +791,14 @@ header {
 }
 
 .product:hover img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 
 /* BADGE */
 
 .product-badge {
+
     position: absolute;
 
     top: 12px;
@@ -667,11 +813,14 @@ header {
     color: white;
 
     font-size: 10px;
+
     font-weight: 800;
 }
 
 .product-badge.sale {
+
     background: var(--warning);
+
     color: var(--primary);
 }
 
@@ -679,6 +828,7 @@ header {
 /* WISHLIST */
 
 .wishlist {
+
     position: absolute;
 
     top: 10px;
@@ -696,6 +846,7 @@ header {
     color: var(--muted);
 
     display: grid;
+
     place-items: center;
 
     transition: var(--transition);
@@ -703,6 +854,7 @@ header {
 
 .wishlist:hover,
 .wishlist.active {
+
     color: var(--accent);
 }
 
@@ -714,6 +866,7 @@ header {
 }
 
 .product-category {
+
     color: var(--muted-light);
 
     font-size: 10px;
@@ -728,15 +881,34 @@ header {
 }
 
 .product-title {
-    font-size: 14px;
 
-    font-weight: 600;
+    font-size: 15px;
+
+    font-weight: 700;
 
     min-height: 40px;
 }
 
+.product-description {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-top: 4px;
+
+    min-height: 34px;
+}
+
+
+/* RATING */
+
 .rating {
+
     display: flex;
+
     align-items: center;
 
     gap: 5px;
@@ -756,33 +928,41 @@ header {
 /* PRICE */
 
 .price-row {
+
     display: flex;
 
     align-items: center;
 
+    justify-content: space-between;
+
     gap: 8px;
 
-    margin: 7px 0 13px;
+    margin: 8px 0 13px;
 }
 
 .price {
+
     font-size: 18px;
 
     font-weight: 800;
 }
 
 .old-price {
+
     font-size: 12px;
 
     color: var(--muted-light);
 
     text-decoration: line-through;
+
+    margin-left: 4px;
 }
 
 
 /* ADD BUTTON */
 
 .add-cart {
+
     width: 100%;
 
     border: none;
@@ -800,7 +980,9 @@ header {
     font-weight: 700;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 7px;
@@ -822,6 +1004,7 @@ header {
 ========================================================= */
 
 .deal {
+
     background: white;
 
     border-radius: 18px;
@@ -842,6 +1025,7 @@ header {
 }
 
 .deal-image img {
+
     width: 100%;
     height: 100%;
 
@@ -849,15 +1033,18 @@ header {
 }
 
 .deal-content {
+
     padding: 50px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
 }
 
 .deal-label {
+
     display: inline-block;
 
     background: #fff3cf;
@@ -869,6 +1056,7 @@ header {
     border-radius: 999px;
 
     font-size: 11px;
+
     font-weight: 800;
 
     margin-bottom: 13px;
@@ -877,12 +1065,14 @@ header {
 }
 
 .deal h3 {
+
     font-size: 30px;
 
     margin-bottom: 8px;
 }
 
 .deal-description {
+
     color: var(--muted);
 
     font-size: 14px;
@@ -891,6 +1081,7 @@ header {
 }
 
 .deal-price {
+
     font-size: 32px;
 
     font-weight: 800;
@@ -899,6 +1090,7 @@ header {
 }
 
 .deal-old-price {
+
     color: var(--muted-light);
 
     font-size: 18px;
@@ -911,6 +1103,7 @@ header {
 }
 
 .stock {
+
     font-size: 13px;
 
     color: var(--muted);
@@ -926,6 +1119,7 @@ header {
 /* TIMER */
 
 .timer {
+
     display: flex;
 
     gap: 8px;
@@ -934,6 +1128,7 @@ header {
 }
 
 .timer-item {
+
     background: var(--primary);
 
     color: white;
@@ -948,12 +1143,14 @@ header {
 }
 
 .timer-number {
+
     font-size: 21px;
 
     font-weight: 800;
 }
 
 .timer-label {
+
     font-size: 9px;
 
     opacity: .65;
@@ -963,10 +1160,11 @@ header {
 
 
 /* =========================================================
-   TESTIMONIALS
+   REVIEWS
 ========================================================= */
 
 .reviews {
+
     display: grid;
 
     grid-template-columns: repeat(4,1fr);
@@ -975,6 +1173,7 @@ header {
 }
 
 .review {
+
     background: white;
 
     border: 1px solid var(--border);
@@ -987,18 +1186,21 @@ header {
 }
 
 .review:hover {
+
     transform: translateY(-4px);
 
     box-shadow: var(--shadow-hover);
 }
 
 .review-stars {
+
     color: #f2aa31;
 
     margin-bottom: 10px;
 }
 
 .review p {
+
     font-size: 13px;
 
     color: var(--muted);
@@ -1009,13 +1211,16 @@ header {
 }
 
 .customer {
+
     display: flex;
+
     align-items: center;
 
     gap: 10px;
 }
 
 .customer img {
+
     width: 40px;
     height: 40px;
 
@@ -1029,6 +1234,7 @@ header {
 }
 
 .customer small {
+
     display: block;
 
     color: var(--muted);
@@ -1042,6 +1248,7 @@ header {
 ========================================================= */
 
 .newsletter {
+
     background: var(--primary);
 
     border-radius: 18px;
@@ -1060,18 +1267,21 @@ header {
 }
 
 .newsletter h3 {
+
     font-size: 25px;
 
     margin-bottom: 5px;
 }
 
 .newsletter p {
+
     color: rgba(255,255,255,.65);
 
     font-size: 13px;
 }
 
 .newsletter-form {
+
     display: flex;
 
     gap: 8px;
@@ -1082,6 +1292,7 @@ header {
 }
 
 .newsletter-form input {
+
     flex: 1;
 
     border: 1px solid rgba(255,255,255,.15);
@@ -1102,6 +1313,7 @@ header {
 }
 
 .newsletter-form button {
+
     border: none;
 
     border-radius: 999px;
@@ -1121,12 +1333,14 @@ header {
 ========================================================= */
 
 footer {
+
     border-top: 1px solid var(--border);
 
     padding: 45px 0 25px;
 }
 
 .footer-grid {
+
     display: grid;
 
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -1137,6 +1351,7 @@ footer {
 }
 
 .footer-brand p {
+
     color: var(--muted);
 
     font-size: 13px;
@@ -1147,12 +1362,14 @@ footer {
 }
 
 .footer-column h4 {
+
     font-size: 13px;
 
     margin-bottom: 12px;
 }
 
 .footer-column a {
+
     display: block;
 
     color: var(--muted);
@@ -1167,6 +1384,7 @@ footer {
 }
 
 .socials {
+
     display: flex;
 
     gap: 8px;
@@ -1175,6 +1393,7 @@ footer {
 }
 
 .socials a {
+
     width: 34px;
     height: 34px;
 
@@ -1183,6 +1402,7 @@ footer {
     background: #f2f2f0;
 
     display: grid;
+
     place-items: center;
 
     color: var(--muted);
@@ -1191,11 +1411,14 @@ footer {
 }
 
 .socials a:hover {
+
     background: var(--accent);
+
     color: white;
 }
 
 .copyright {
+
     text-align: center;
 
     border-top: 1px solid var(--border);
@@ -1213,6 +1436,7 @@ footer {
 ========================================================= */
 
 .cart-overlay {
+
     position: fixed;
 
     inset: 0;
@@ -1222,17 +1446,21 @@ footer {
     z-index: 2000;
 
     opacity: 0;
+
     visibility: hidden;
 
     transition: var(--transition);
 }
 
 .cart-overlay.show {
+
     opacity: 1;
+
     visibility: visible;
 }
 
 .cart-drawer {
+
     position: absolute;
 
     right: 0;
@@ -1240,9 +1468,9 @@ footer {
 
     height: 100%;
 
-    width: 380px;
+    width: 390px;
 
-    max-width: 90%;
+    max-width: 92%;
 
     background: white;
 
@@ -1253,6 +1481,7 @@ footer {
     transition: .3s ease;
 
     display: flex;
+
     flex-direction: column;
 }
 
@@ -1261,6 +1490,7 @@ footer {
 }
 
 .cart-header {
+
     display: flex;
 
     justify-content: space-between;
@@ -1277,6 +1507,7 @@ footer {
 }
 
 .close-cart {
+
     border: none;
 
     width: 35px;
@@ -1288,6 +1519,7 @@ footer {
 }
 
 .cart-items {
+
     flex: 1;
 
     overflow-y: auto;
@@ -1296,6 +1528,7 @@ footer {
 }
 
 .empty-cart {
+
     text-align: center;
 
     color: var(--muted);
@@ -1304,6 +1537,7 @@ footer {
 }
 
 .empty-cart i {
+
     font-size: 40px;
 
     margin-bottom: 12px;
@@ -1312,12 +1546,14 @@ footer {
 }
 
 .cart-footer {
+
     border-top: 1px solid var(--border);
 
     padding-top: 18px;
 }
 
 .cart-total {
+
     display: flex;
 
     justify-content: space-between;
@@ -1328,6 +1564,7 @@ footer {
 }
 
 .checkout {
+
     width: 100%;
 
     border: none;
@@ -1341,6 +1578,12 @@ footer {
     color: white;
 
     font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.checkout:hover {
+    background: var(--accent-dark);
 }
 
 
@@ -1349,6 +1592,7 @@ footer {
 ========================================================= */
 
 .toast {
+
     position: fixed;
 
     bottom: 25px;
@@ -1377,6 +1621,7 @@ footer {
 }
 
 .toast.show {
+
     opacity: 1;
 
     transform: translate(-50%,0);
@@ -1418,7 +1663,9 @@ footer {
     }
 
     .header-main {
+
         min-height: 62px;
+
         gap: 8px;
     }
 
@@ -1435,7 +1682,9 @@ footer {
     }
 
     .search-box {
+
         flex: 1;
+
         width: auto;
     }
 
@@ -1443,14 +1692,16 @@ footer {
         font-size: 12px;
     }
 
-    .header-actions .icon-btn:nth-child(1),
-    .header-actions .icon-btn:nth-child(2) {
+    .header-actions .icon-btn:nth-child(1) {
         display: none;
     }
 
     .hero {
-        min-height: 420px;
+
+        min-height: 430px;
+
         border-radius: 14px;
+
         margin-top: 10px;
     }
 
@@ -1462,6 +1713,14 @@ footer {
         font-size: 38px;
     }
 
+    .hero p {
+        font-size: 14px;
+    }
+
+    .delivery-info {
+        gap: 10px;
+    }
+
     .section {
         padding: 45px 0;
     }
@@ -1471,7 +1730,9 @@ footer {
     }
 
     .products {
+
         grid-template-columns: repeat(2,1fr);
+
         gap: 12px;
     }
 
@@ -1496,8 +1757,11 @@ footer {
     }
 
     .newsletter {
+
         flex-direction: column;
+
         align-items: stretch;
+
         padding: 30px 22px;
     }
 
@@ -1522,7 +1786,7 @@ footer {
     }
 
     .hero {
-        min-height: 380px;
+        min-height: 390px;
     }
 
     .hero h1 {
@@ -1530,7 +1794,12 @@ footer {
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .delivery-info {
+        flex-direction: column;
+        gap: 6px;
     }
 
     .section-heading h2 {
@@ -1542,12 +1811,16 @@ footer {
     }
 
     .product-toolbar {
+
         align-items: flex-start;
+
         flex-direction: column;
     }
 
     .filter-buttons {
+
         width: 100%;
+
         overflow-x: auto;
     }
 
@@ -1556,13 +1829,17 @@ footer {
     }
 
     .product-badge {
+
         font-size: 9px;
+
         padding: 4px 7px;
     }
 
     .wishlist {
+
         width: 30px;
         height: 30px;
+
         font-size: 12px;
     }
 
@@ -1571,7 +1848,9 @@ footer {
     }
 
     .add-cart {
+
         padding: 9px 5px;
+
         font-size: 11px;
     }
 
@@ -1601,6 +1880,7 @@ footer {
 }
 
 </style>
+
 </head>
 
 
@@ -1612,7 +1892,10 @@ footer {
 ========================================================= -->
 
 <div class="top-bar">
-    🚚 <strong>Free shipping</strong> on your first order • Easy 30-day returns
+
+    🚚 <strong>Free delivery</strong> on orders above $25
+    • Fresh food delivered fast
+
 </div>
 
 
@@ -1628,23 +1911,37 @@ footer {
         <i class="fas fa-bars"></i>
     </button>
 
+
     <a href="#" class="logo">
-        <i class="fas fa-store"></i>
-        Nexus<span>Shop</span>
+
+        <i class="fas fa-burger"></i>
+
+        Quick<span>Bite</span>
+
     </a>
 
 
     <nav class="nav-links">
 
-        <a href="#" class="active">Home</a>
+        <a href="#" class="active">
+            Home
+        </a>
 
-        <a href="#categories">Categories</a>
+        <a href="#categories">
+            Categories
+        </a>
 
-        <a href="#products">Trending</a>
+        <a href="#foods">
+            Menu
+        </a>
 
-        <a href="#deals">Deals</a>
+        <a href="#deals">
+            Deals
+        </a>
 
-        <a href="#reviews">Reviews</a>
+        <a href="#reviews">
+            Reviews
+        </a>
 
     </nav>
 
@@ -1656,7 +1953,7 @@ footer {
         <input
             type="search"
             id="searchInput"
-            placeholder="Search products..."
+            placeholder="Search burgers, pizza..."
         >
 
     </div>
@@ -1664,19 +1961,33 @@ footer {
 
     <div class="header-actions">
 
-        <button class="icon-btn">
+        <button class="icon-btn"
+                aria-label="Account">
+
             <i class="far fa-user"></i>
+
         </button>
 
-        <button class="icon-btn">
+
+        <button class="icon-btn"
+                aria-label="Favorites">
+
             <i class="far fa-heart"></i>
+
         </button>
 
-        <button class="icon-btn" id="cartButton">
+
+        <button class="icon-btn"
+                id="cartButton"
+                aria-label="Shopping cart">
 
             <i class="fas fa-shopping-bag"></i>
 
-            <span class="cart-count" id="cartCount">0</span>
+            <span
+                class="cart-count"
+                id="cartCount">
+                0
+            </span>
 
         </button>
 
@@ -1694,41 +2005,97 @@ footer {
 <main>
 
 
-<!-- HERO -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 
 <section class="hero container">
 
     <div class="hero-image"></div>
+
 
     <div class="container">
 
         <div class="hero-content">
 
             <div class="hero-label">
-                <i class="fas fa-sparkles"></i>
-                New Collection 2026
+
+                <i class="fas fa-bolt"></i>
+
+                Fresh • Fast • Delicious
+
             </div>
 
+
             <h1>
-                Everything you need.
-                All in one place.
+
+                Your favorite food.
+                <span>Delivered fast.</span>
+
             </h1>
 
+
             <p>
-                Discover premium fashion, technology and accessories
-                carefully selected for modern lifestyles.
+
+                From juicy burgers and cheesy pizzas to crispy
+                fries and refreshing drinks — order your favorites
+                and get them delivered to your doorstep.
+
             </p>
+
+
+            <div class="delivery-info">
+
+                <div class="delivery-item">
+
+                    <i class="fas fa-clock"></i>
+
+                    20–30 min delivery
+
+                </div>
+
+
+                <div class="delivery-item">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    Live order tracking
+
+                </div>
+
+
+                <div class="delivery-item">
+
+                    <i class="fas fa-star"></i>
+
+                    4.9/5 customer rating
+
+                </div>
+
+            </div>
+
 
             <div class="buttons">
 
-                <button class="btn btn-primary" id="shopNow">
-                    Shop Now
+                <button
+                    class="btn btn-primary"
+                    id="orderNow">
+
+                    Order Now
+
                     <i class="fas fa-arrow-right"></i>
+
                 </button>
 
-                <button class="btn btn-light" id="exploreDeals">
+
+                <button
+                    class="btn btn-light"
+                    id="exploreDeals">
+
                     <i class="fas fa-bolt"></i>
+
                     Today's Deals
+
                 </button>
 
             </div>
@@ -1744,29 +2111,45 @@ footer {
      CATEGORIES
 ========================================================= -->
 
-<section class="section" id="categories">
+<section
+    class="section"
+    id="categories">
 
 <div class="container">
+
 
     <div class="section-heading">
 
         <div>
-            <h2>Shop by Category</h2>
+
+            <h2>
+                What are you craving?
+            </h2>
 
             <p>
-                Find products that match your lifestyle
+                Pick a category and find your favorite food
             </p>
+
         </div>
 
-        <a href="#" class="view-link">
-            View all
+
+        <a href="#foods"
+           class="view-link">
+
+            View menu
+
             <i class="fas fa-arrow-right"></i>
+
         </a>
 
     </div>
 
 
-    <div class="categories" id="categoriesGrid"></div>
+    <div
+        class="categories"
+        id="categoriesGrid">
+    </div>
+
 
 </div>
 
@@ -1774,26 +2157,38 @@ footer {
 
 
 <!-- =========================================================
-     PRODUCTS
+     FOOD MENU
 ========================================================= -->
 
-<section class="section" id="products">
+<section
+    class="section"
+    id="foods">
 
 <div class="container">
+
 
     <div class="section-heading">
 
         <div>
-            <h2>Trending Products</h2>
+
+            <h2>
+                Popular Near You
+            </h2>
 
             <p>
-                Popular products customers love
+                Customer favorites delivered fresh
             </p>
+
         </div>
 
-        <a href="#" class="view-link">
-            View all
+
+        <a href="#foods"
+           class="view-link">
+
+            Full Menu
+
             <i class="fas fa-arrow-right"></i>
+
         </a>
 
     </div>
@@ -1801,22 +2196,41 @@ footer {
 
     <div class="product-toolbar">
 
-        <div class="result-text" id="resultText">
-            Showing all products
+        <div
+            class="result-text"
+            id="resultText">
+
+            Showing all food
+
         </div>
+
 
         <div class="filter-buttons">
 
-            <button class="filter-btn active" data-filter="all">
+            <button
+                class="filter-btn active"
+                data-filter="all">
+
                 All
+
             </button>
 
-            <button class="filter-btn" data-filter="new">
-                New
+
+            <button
+                class="filter-btn"
+                data-filter="popular">
+
+                Popular
+
             </button>
 
-            <button class="filter-btn" data-filter="sale">
-                Sale
+
+            <button
+                class="filter-btn"
+                data-filter="deal">
+
+                Deals
+
             </button>
 
         </div>
@@ -1824,7 +2238,11 @@ footer {
     </div>
 
 
-    <div class="products" id="productsGrid"></div>
+    <div
+        class="products"
+        id="productsGrid">
+    </div>
+
 
 </div>
 
@@ -1832,21 +2250,28 @@ footer {
 
 
 <!-- =========================================================
-     DEAL
+     FLASH DEAL
 ========================================================= -->
 
-<section class="section" id="deals">
+<section
+    class="section"
+    id="deals">
 
 <div class="container">
+
 
     <div class="section-heading">
 
         <div>
-            <h2>⚡ Flash Deal</h2>
+
+            <h2>
+                ⚡ Today's Flash Deal
+            </h2>
 
             <p>
-                Limited stock. Limited time.
+                Limited-time offer for hungry customers
             </p>
+
         </div>
 
     </div>
@@ -1854,11 +2279,12 @@ footer {
 
     <div class="deal">
 
+
         <div class="deal-image">
 
             <img
-                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85"
-                alt="MacBook Air"
+                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+                alt="Burger meal"
             >
 
         </div>
@@ -1867,65 +2293,130 @@ footer {
         <div class="deal-content">
 
             <span class="deal-label">
+
                 <i class="fas fa-bolt"></i>
+
                 Limited Offer
+
             </span>
 
+
             <h3>
-                MacBook Air M2
+                Ultimate Burger Combo
             </h3>
 
+
             <p class="deal-description">
-                Thin, light and powerful.
-                Perfect for work, creativity and everyday productivity.
+
+                Double beef burger, crispy fries and a
+                refreshing drink. Everything you need
+                for the perfect meal.
+
             </p>
 
 
             <div class="deal-price">
 
-                $999
+                $12.99
 
                 <span class="deal-old-price">
-                    $1,199
+                    $17.99
                 </span>
 
             </div>
 
 
             <div class="stock">
-                Only <strong>12 items</strong> remaining
+
+                Only <strong>18 combos</strong>
+                available at this price
+
             </div>
 
 
             <div class="timer">
 
-                <div class="timer-item">
-                    <div class="timer-number" id="days">00</div>
-                    <div class="timer-label">Days</div>
-                </div>
 
                 <div class="timer-item">
-                    <div class="timer-number" id="hours">00</div>
-                    <div class="timer-label">Hours</div>
+
+                    <div
+                        class="timer-number"
+                        id="days">
+
+                        00
+
+                    </div>
+
+                    <div class="timer-label">
+                        Days
+                    </div>
+
                 </div>
 
-                <div class="timer-item">
-                    <div class="timer-number" id="minutes">00</div>
-                    <div class="timer-label">Mins</div>
-                </div>
 
                 <div class="timer-item">
-                    <div class="timer-number" id="seconds">00</div>
-                    <div class="timer-label">Secs</div>
+
+                    <div
+                        class="timer-number"
+                        id="hours">
+
+                        00
+
+                    </div>
+
+                    <div class="timer-label">
+                        Hours
+                    </div>
+
+                </div>
+
+
+                <div class="timer-item">
+
+                    <div
+                        class="timer-number"
+                        id="minutes">
+
+                        00
+
+                    </div>
+
+                    <div class="timer-label">
+                        Mins
+                    </div>
+
+                </div>
+
+
+                <div class="timer-item">
+
+                    <div
+                        class="timer-number"
+                        id="seconds">
+
+                        00
+
+                    </div>
+
+                    <div class="timer-label">
+                        Secs
+                    </div>
+
                 </div>
 
             </div>
 
 
-            <button class="btn btn-primary" id="dealButton">
+            <button
+                class="btn btn-primary"
+                id="dealButton">
+
                 <i class="fas fa-cart-plus"></i>
-                Add to Cart
+
+                Add Combo to Cart
+
             </button>
+
 
         </div>
 
@@ -1940,24 +2431,35 @@ footer {
      REVIEWS
 ========================================================= -->
 
-<section class="section" id="reviews">
+<section
+    class="section"
+    id="reviews">
 
 <div class="container">
+
 
     <div class="section-heading">
 
         <div>
-            <h2>What Customers Say</h2>
+
+            <h2>
+                What Foodies Say
+            </h2>
 
             <p>
-                Trusted by our shopping community
+                Thousands of happy customers
             </p>
+
         </div>
 
     </div>
 
 
-    <div class="reviews" id="reviewsList"></div>
+    <div
+        class="reviews"
+        id="reviewsList">
+    </div>
+
 
 </div>
 
@@ -1981,13 +2483,16 @@ footer {
             </h3>
 
             <p>
-                Subscribe for exclusive deals, new arrivals and early access.
+                Subscribe for exclusive food deals,
+                new menu items and special offers.
             </p>
 
         </div>
 
 
-        <form class="newsletter-form" id="newsletterForm">
+        <form
+            class="newsletter-form"
+            id="newsletterForm">
 
             <input
                 type="email"
@@ -1996,8 +2501,11 @@ footer {
                 required
             >
 
+
             <button type="submit">
+
                 Subscribe
+
             </button>
 
         </form>
@@ -2020,30 +2528,63 @@ footer {
 
 <div class="container">
 
+
     <div class="footer-grid">
+
 
         <div class="footer-brand">
 
+
             <div class="logo">
-                <i class="fas fa-store"></i>
-                Nexus<span>Shop</span>
+
+                <i class="fas fa-burger"></i>
+
+                Quick<span>Bite</span>
+
             </div>
 
+
             <p>
-                A modern e-commerce experience designed
-                to make online shopping simple and enjoyable.
+
+                Delicious food, delivered fast.
+                Your favorite meals are just a few
+                clicks away.
+
             </p>
 
 
             <div class="socials">
 
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   aria-label="Facebook">
 
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                    <i class="fab fa-facebook-f"></i>
 
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                </a>
 
-                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"
+                   aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <a href="#"
+                   aria-label="Twitter">
+
+                    <i class="fab fa-twitter"></i>
+
+                </a>
+
+
+                <a href="#"
+                   aria-label="YouTube">
+
+                    <i class="fab fa-youtube"></i>
+
+                </a>
 
             </div>
 
@@ -2052,47 +2593,86 @@ footer {
 
         <div class="footer-column">
 
-            <h4>Company</h4>
+            <h4>
+                QuickBite
+            </h4>
 
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Blog</a>
-            <a href="#">Press</a>
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Our Menu
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Partner With Us
+            </a>
 
         </div>
 
 
         <div class="footer-column">
 
-            <h4>Support</h4>
+            <h4>
+                Help
+            </h4>
 
-            <a href="#">Help Center</a>
-            <a href="#">Shipping</a>
-            <a href="#">Returns</a>
-            <a href="#">Contact</a>
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                Delivery
+            </a>
+
+            <a href="#">
+                Refunds
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
 
         </div>
 
 
         <div class="footer-column">
 
-            <h4>Legal</h4>
+            <h4>
+                Legal
+            </h4>
 
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Cookies</a>
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+            <a href="#">
+                Cookies
+            </a>
 
         </div>
+
 
     </div>
 
 
     <div class="copyright">
 
-        © <span id="year"></span> NexusShop.
+        © <span id="year"></span>
+        QuickBite.
         All rights reserved.
 
     </div>
+
 
 </div>
 
@@ -2100,50 +2680,67 @@ footer {
 
 
 <!-- =========================================================
-     CART DRAWER
+     CART
 ========================================================= -->
 
-<div class="cart-overlay" id="cartOverlay">
+<div
+    class="cart-overlay"
+    id="cartOverlay">
+
 
     <div class="cart-drawer">
+
 
         <div class="cart-header">
 
             <h3>
-                Your Cart
+                Your Order
             </h3>
 
-            <button class="close-cart" id="closeCart">
+
+            <button
+                class="close-cart"
+                id="closeCart"
+                aria-label="Close cart">
+
                 <i class="fas fa-times"></i>
+
             </button>
 
         </div>
 
 
-        <div class="cart-items" id="cartItems">
+        <div
+            class="cart-items"
+            id="cartItems">
+
 
             <div class="empty-cart">
 
-                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-burger"></i>
 
                 <p>
-                    Your cart is empty
+                    Your order is empty
                 </p>
 
                 <small>
-                    Add products to see them here.
+                    Add something delicious!
                 </small>
 
             </div>
+
 
         </div>
 
 
         <div class="cart-footer">
 
+
             <div class="cart-total">
 
-                <span>Total</span>
+                <span>
+                    Total
+                </span>
 
                 <span id="cartTotal">
                     $0
@@ -2151,11 +2748,20 @@ footer {
 
             </div>
 
-            <button class="checkout">
+
+            <button
+                class="checkout"
+                id="checkoutButton">
+
                 Proceed to Checkout
+
+                <i class="fas fa-arrow-right"></i>
+
             </button>
 
+
         </div>
+
 
     </div>
 
@@ -2164,7 +2770,10 @@ footer {
 
 <!-- TOAST -->
 
-<div class="toast" id="toast"></div>
+<div
+    class="toast"
+    id="toast">
+</div>
 
 
 <script>
@@ -2176,39 +2785,39 @@ footer {
 const CATEGORIES = [
 
     {
-        name: "Smartphones",
-        icon: "fa-mobile-screen-button",
-        count: 24
-    },
-
-    {
-        name: "Laptops",
-        icon: "fa-laptop",
+        name: "Burgers",
+        icon: "fa-burger",
         count: 18
     },
 
     {
-        name: "Clothing",
-        icon: "fa-shirt",
-        count: 42
+        name: "Pizza",
+        icon: "fa-pizza-slice",
+        count: 24
     },
 
     {
-        name: "Gadgets",
-        icon: "fa-headphones",
-        count: 31
+        name: "Chicken",
+        icon: "fa-drumstick-bite",
+        count: 16
     },
 
     {
-        name: "Footwear",
-        icon: "fa-shoe-prints",
-        count: 27
+        name: "Wraps",
+        icon: "fa-bread-slice",
+        count: 12
     },
 
     {
-        name: "Accessories",
-        icon: "fa-watch",
-        count: 39
+        name: "Fries",
+        icon: "fa-bowl-food",
+        count: 10
+    },
+
+    {
+        name: "Drinks",
+        icon: "fa-glass-water",
+        count: 21
     }
 
 ];
@@ -2218,101 +2827,209 @@ const PRODUCTS = [
 
     {
         id: 1,
-        title: "iPhone 14 Pro Max",
-        price: 1099,
-        oldPrice: 1199,
+
+        title: "Classic Cheeseburger",
+
+        description:
+            "Juicy beef patty, cheddar cheese and fresh vegetables.",
+
+        price: 8.99,
+
+        oldPrice: 10.99,
+
         rating: 5,
-        reviews: 128,
-        badge: "New",
-        category: "Smartphones",
-        type: "new",
-        img: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=700&q=85"
+
+        reviews: 328,
+
+        badge: "Popular",
+
+        category: "Burgers",
+
+        type: "popular",
+
+        img:
+        "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 2,
-        title: 'MacBook Pro 14"',
-        price: 1999,
-        rating: 4,
-        reviews: 86,
+
+        title: "Pepperoni Pizza",
+
+        description:
+            "Loaded with mozzarella cheese and spicy pepperoni.",
+
+        price: 13.99,
+
+        rating: 5,
+
+        reviews: 245,
+
         badge: "",
-        category: "Laptops",
-        type: "all",
-        img: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=85"
+
+        category: "Pizza",
+
+        type: "popular",
+
+        img:
+        "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 3,
-        title: "Apple Watch Series 8",
-        price: 349,
-        oldPrice: 399,
-        rating: 5,
-        reviews: 214,
-        badge: "Sale",
-        category: "Accessories",
-        type: "sale",
-        img: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=700&q=85"
+
+        title: "Crispy Chicken Bucket",
+
+        description:
+            "Golden crispy chicken pieces with our signature seasoning.",
+
+        price: 11.99,
+
+        oldPrice: 14.99,
+
+        rating: 4,
+
+        reviews: 189,
+
+        badge: "Deal",
+
+        category: "Chicken",
+
+        type: "deal",
+
+        img:
+        "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 4,
-        title: "Nike Air Max 270",
-        price: 150,
+
+        title: "Chicken Caesar Wrap",
+
+        description:
+            "Grilled chicken, lettuce, parmesan and creamy Caesar sauce.",
+
+        price: 9.49,
+
         rating: 4,
-        reviews: 53,
+
+        reviews: 143,
+
         badge: "",
-        category: "Footwear",
+
+        category: "Wraps",
+
         type: "all",
-        img: "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=85"
+
+        img:
+        "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 5,
-        title: "Sony A7 IV Camera",
-        price: 2499,
+
+        title: "Loaded Cheese Fries",
+
+        description:
+            "Crispy fries topped with melted cheese and special sauce.",
+
+        price: 6.49,
+
+        oldPrice: 7.99,
+
         rating: 5,
-        reviews: 42,
-        badge: "New",
-        category: "Gadgets",
-        type: "new",
-        img: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=700&q=85"
+
+        reviews: 217,
+
+        badge: "Deal",
+
+        category: "Fries",
+
+        type: "deal",
+
+        img:
+        "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 6,
-        title: "Chanel No. 5",
-        price: 120,
-        rating: 5,
-        reviews: 189,
+
+        title: "Fresh Lemon Soda",
+
+        description:
+            "Refreshing sparkling lemon drink served chilled.",
+
+        price: 3.49,
+
+        rating: 4,
+
+        reviews: 94,
+
         badge: "",
-        category: "Accessories",
+
+        category: "Drinks",
+
         type: "all",
-        img: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=700&q=85"
+
+        img:
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 7,
-        title: "Travel Backpack",
-        price: 79,
-        oldPrice: 99,
-        rating: 4,
-        reviews: 67,
-        badge: "Sale",
-        category: "Accessories",
-        type: "sale",
-        img: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=700&q=85"
+
+        title: "Double Bacon Burger",
+
+        description:
+            "Two beef patties, crispy bacon, cheddar and BBQ sauce.",
+
+        price: 12.49,
+
+        oldPrice: 15.49,
+
+        rating: 5,
+
+        reviews: 276,
+
+        badge: "Deal",
+
+        category: "Burgers",
+
+        type: "deal",
+
+        img:
+        "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=85"
     },
+
 
     {
         id: 8,
-        title: "Sony WH-1000XM5",
-        price: 399,
+
+        title: "BBQ Chicken Pizza",
+
+        description:
+            "Grilled chicken, BBQ sauce, mozzarella and red onions.",
+
+        price: 15.49,
+
         rating: 5,
-        reviews: 156,
-        badge: "",
-        category: "Gadgets",
-        type: "all",
-        img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85"
+
+        reviews: 201,
+
+        badge: "Popular",
+
+        category: "Pizza",
+
+        type: "popular",
+
+        img:
+        "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=85"
     }
 
 ];
@@ -2321,35 +3038,62 @@ const PRODUCTS = [
 const REVIEWS = [
 
     {
-        name: "Ava Martin",
-        role: "Verified Buyer",
+        name: "Emma Wilson",
+
+        role: "Verified Customer",
+
         rating: 5,
-        text: "Fast shipping and excellent support. The product exceeded my expectations!",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+
+        text:
+            "The burger arrived hot and fresh. Delivery was incredibly fast!",
+
+        image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
     },
 
+
     {
-        name: "Michael Lee",
-        role: "Frequent Shopper",
+        name: "Daniel Smith",
+
+        role: "Frequent Customer",
+
+        rating: 5,
+
+        text:
+            "Amazing pizza and very reasonable prices. QuickBite is now my go-to app.",
+
+        image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+    },
+
+
+    {
+        name: "Sophia Johnson",
+
+        role: "Verified Customer",
+
         rating: 4,
-        text: "Great selection and smooth checkout. I will definitely shop again.",
-        image: "https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=100&q=80"
+
+        text:
+            "Everything was packed perfectly and the food tasted great.",
+
+        image:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
     },
 
-    {
-        name: "Sophia Chen",
-        role: "Designer",
-        rating: 5,
-        text: "Love the quality and packaging. Everything arrived in perfect condition.",
-        image: "https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-    },
 
     {
-        name: "James Wilson",
-        role: "Tech Enthusiast",
+        name: "Michael Brown",
+
+        role: "Food Lover",
+
         rating: 5,
-        text: "Amazing prices on electronics. The MacBook deal was unbeatable.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+
+        text:
+            "The flash deal was fantastic. Great food and super-fast delivery.",
+
+        image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
     }
 
 ];
@@ -2410,7 +3154,7 @@ function showToast(message) {
 
         toast.classList.remove("show");
 
-    }, 2000);
+    }, 2200);
 
 }
 
@@ -2425,17 +3169,25 @@ function renderCategories() {
 
     CATEGORIES.forEach(category => {
 
-        const div = document.createElement("div");
+        const div =
+            document.createElement("div");
 
         div.className = "category";
+
 
         div.innerHTML = `
 
             <div class="category-icon">
+
                 <i class="fas ${category.icon}"></i>
+
             </div>
 
-            <h4>${category.name}</h4>
+
+            <h4>
+                ${category.name}
+            </h4>
+
 
             <small>
                 ${category.count} items
@@ -2443,19 +3195,38 @@ function renderCategories() {
 
         `;
 
+
         div.addEventListener("click", () => {
 
-            searchInput.value = category.name;
+            searchInput.value =
+                category.name;
+
+            currentFilter = "all";
+
+
+            document
+                .querySelectorAll(".filter-btn")
+                .forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+
+            document
+                .querySelector('[data-filter="all"]')
+                .classList.add("active");
+
 
             filterProducts();
 
+
             document
-                .getElementById("products")
+                .getElementById("foods")
                 .scrollIntoView({
                     behavior: "smooth"
                 });
 
         });
+
 
         categoriesGrid.appendChild(div);
 
@@ -2472,6 +3243,7 @@ function renderProducts(list) {
 
     productsGrid.innerHTML = "";
 
+
     if (!list.length) {
 
         productsGrid.innerHTML = `
@@ -2482,23 +3254,28 @@ function renderProducts(list) {
                 padding:60px 20px;
             ">
 
-                <i class="fas fa-search"
-                   style="
-                       font-size:35px;
-                       color:#aaa;
-                       margin-bottom:15px;
-                   ">
+                <i
+                    class="fas fa-utensils"
+                    style="
+                        font-size:35px;
+                        color:#aaa;
+                        margin-bottom:15px;
+                    ">
                 </i>
 
+
                 <h3>
-                    No products found
+                    No food found
                 </h3>
+
 
                 <p style="
                     color:#777;
                     margin-top:5px;
                 ">
-                    Try another search term.
+
+                    Try searching for another dish.
+
                 </p>
 
             </div>
@@ -2526,44 +3303,68 @@ function renderProducts(list) {
 
             <div class="product-image">
 
+
                 <img
                     src="${product.img}"
                     alt="${product.title}"
                     loading="lazy"
                 >
 
+
                 ${
                     product.badge
+
                     ?
+
                     `<span class="product-badge ${
-                        product.badge === "Sale"
+                        product.badge === "Deal"
                         ? "sale"
                         : ""
                     }">
+
                         ${product.badge}
+
                     </span>`
-                    : ""
+
+                    :
+
+                    ""
                 }
 
 
                 <button
                     class="wishlist"
-                    aria-label="Add to wishlist"
-                >
+                    aria-label="Add to favorites">
+
                     <i class="far fa-heart"></i>
+
                 </button>
+
 
             </div>
 
 
             <div class="product-content">
 
+
                 <div class="product-category">
+
                     ${product.category}
+
                 </div>
 
+
                 <div class="product-title">
+
                     ${product.title}
+
+                </div>
+
+
+                <div class="product-description">
+
+                    ${product.description}
+
                 </div>
 
 
@@ -2580,32 +3381,48 @@ function renderProducts(list) {
 
                 <div class="price-row">
 
-                    <span class="price">
-                        $${product.price.toLocaleString()}
-                    </span>
 
-                    ${
-                        product.oldPrice
-                        ?
-                        `<span class="old-price">
-                            $${product.oldPrice.toLocaleString()}
-                        </span>`
-                        : ""
-                    }
+                    <div>
+
+                        <span class="price">
+
+                            $${product.price.toFixed(2)}
+
+                        </span>
+
+
+                        ${
+                            product.oldPrice
+
+                            ?
+
+                            `<span class="old-price">
+
+                                $${product.oldPrice.toFixed(2)}
+
+                            </span>`
+
+                            :
+
+                            ""
+                        }
+
+                    </div>
+
 
                 </div>
 
 
                 <button
                     class="add-cart"
-                    data-id="${product.id}"
-                >
+                    data-id="${product.id}">
 
-                    <i class="fas fa-cart-plus"></i>
+                    <i class="fas fa-plus"></i>
 
-                    Add to Cart
+                    Add to Order
 
                 </button>
+
 
             </div>
 
@@ -2645,16 +3462,28 @@ function renderProducts(list) {
 
                 button.classList.toggle("active");
 
+
                 const icon =
                     button.querySelector("i");
 
+
                 icon.classList.toggle("far");
+
                 icon.classList.toggle("fas");
 
+
                 showToast(
+
                     button.classList.contains("active")
-                    ? "Added to wishlist ❤️"
-                    : "Removed from wishlist"
+
+                    ?
+
+                    "Added to favorites ❤️"
+
+                    :
+
+                    "Removed from favorites"
+
                 );
 
             });
@@ -2676,44 +3505,54 @@ function filterProducts() {
             .toLowerCase();
 
 
-    let results =
+    const results =
         PRODUCTS.filter(product => {
 
+
             const matchesSearch =
+
                 !query ||
+
                 product.title
                     .toLowerCase()
                     .includes(query) ||
 
                 product.category
                     .toLowerCase()
+                    .includes(query) ||
+
+                product.description
+                    .toLowerCase()
                     .includes(query);
 
 
             const matchesFilter =
+
                 currentFilter === "all" ||
+
                 product.type === currentFilter;
 
 
-            return matchesSearch &&
-                   matchesFilter;
+            return (
+                matchesSearch &&
+                matchesFilter
+            );
 
         });
 
 
-    document.getElementById("resultText")
+    document
+        .getElementById("resultText")
         .textContent =
-        `Showing ${results.length} product${
-            results.length !== 1 ? "s" : ""
-        }`;
+
+        `Showing ${results.length}
+        food item${results.length !== 1 ? "s" : ""}`;
 
 
     renderProducts(results);
 
 }
 
-
-/* SEARCH */
 
 searchInput.addEventListener(
     "input",
@@ -2729,16 +3568,20 @@ document
 
         button.addEventListener("click", () => {
 
+
             document
                 .querySelectorAll(".filter-btn")
                 .forEach(btn =>
                     btn.classList.remove("active")
                 );
 
+
             button.classList.add("active");
+
 
             currentFilter =
                 button.dataset.filter;
+
 
             filterProducts();
 
@@ -2758,11 +3601,14 @@ function addToCart(id, button) {
             product => product.id === id
         );
 
+
     if (!product) return;
 
 
     const existing =
-        cart.find(item => item.id === id);
+        cart.find(
+            item => item.id === id
+        );
 
 
     if (existing) {
@@ -2772,8 +3618,11 @@ function addToCart(id, button) {
     } else {
 
         cart.push({
+
             ...product,
+
             quantity: 1
+
         });
 
     }
@@ -2782,36 +3631,43 @@ function addToCart(id, button) {
     updateCart();
 
 
-    button.classList.add("added");
+    if (button) {
 
-    button.innerHTML =
-        `<i class="fas fa-check"></i> Added`;
+        button.classList.add("added");
 
-
-    setTimeout(() => {
-
-        button.classList.remove("added");
 
         button.innerHTML =
-            `<i class="fas fa-cart-plus"></i> Add to Cart`;
+            `<i class="fas fa-check"></i> Added`;
 
-    }, 1300);
+
+        setTimeout(() => {
+
+            button.classList.remove("added");
+
+            button.innerHTML =
+                `<i class="fas fa-plus"></i> Add to Order`;
+
+        }, 1300);
+
+    }
 
 
     showToast(
-        `${product.title} added to cart`
+        `${product.title} added to order`
     );
 
 }
 
 
-/* UPDATE CART */
+/* =========================================================
+   UPDATE CART
+========================================================= */
 
 function updateCart() {
 
     const totalQuantity =
         cart.reduce(
-            (sum, item) =>
+            (sum,item) =>
                 sum + item.quantity,
             0
         );
@@ -2826,7 +3682,9 @@ function updateCart() {
 }
 
 
-/* RENDER CART */
+/* =========================================================
+   RENDER CART
+========================================================= */
 
 function renderCart() {
 
@@ -2836,21 +3694,24 @@ function renderCart() {
 
             <div class="empty-cart">
 
-                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-burger"></i>
 
                 <p>
-                    Your cart is empty
+                    Your order is empty
                 </p>
 
                 <small>
-                    Add products to see them here.
+                    Add something delicious!
                 </small>
 
             </div>
 
         `;
 
-        cartTotal.textContent = "$0";
+
+        cartTotal.textContent =
+            "$0.00";
+
 
         return;
 
@@ -2865,12 +3726,15 @@ function renderCart() {
         const div =
             document.createElement("div");
 
+
         div.style.cssText = `
+
             display:flex;
             gap:12px;
             margin-bottom:18px;
             padding-bottom:15px;
             border-bottom:1px solid #eee;
+
         `;
 
 
@@ -2878,6 +3742,7 @@ function renderCart() {
 
             <img
                 src="${item.img}"
+                alt="${item.title}"
                 style="
                     width:65px;
                     height:65px;
@@ -2886,19 +3751,28 @@ function renderCart() {
                 "
             >
 
+
             <div style="flex:1">
 
-                <strong style="font-size:13px">
+                <strong style="
+                    font-size:13px;
+                ">
+
                     ${item.title}
+
                 </strong>
+
 
                 <div style="
                     color:#777;
                     font-size:12px;
                     margin-top:4px;
                 ">
-                    $${item.price.toLocaleString()}
+
+                    $${item.price.toFixed(2)}
+
                 </div>
+
 
                 <div style="
                     display:flex;
@@ -2906,6 +3780,7 @@ function renderCart() {
                     gap:8px;
                     margin-top:7px;
                 ">
+
 
                     <button
                         onclick="changeQuantity(${item.id},-1)"
@@ -2916,13 +3791,17 @@ function renderCart() {
                             border-radius:5px;
                             background:white;
                         "
-                    >
+                        aria-label="Decrease quantity">
+
                         −
+
                     </button>
+
 
                     <span>
                         ${item.quantity}
                     </span>
+
 
                     <button
                         onclick="changeQuantity(${item.id},1)"
@@ -2933,9 +3812,12 @@ function renderCart() {
                             border-radius:5px;
                             background:white;
                         "
-                    >
+                        aria-label="Increase quantity">
+
                         +
+
                     </button>
+
 
                 </div>
 
@@ -2960,12 +3842,14 @@ function renderCart() {
 
 
     cartTotal.textContent =
-        "$" + total.toLocaleString();
+        "$" + total.toFixed(2);
 
 }
 
 
-/* CHANGE QUANTITY */
+/* =========================================================
+   CHANGE QUANTITY
+========================================================= */
 
 function changeQuantity(id, amount) {
 
@@ -2973,6 +3857,7 @@ function changeQuantity(id, amount) {
         cart.find(
             item => item.id === id
         );
+
 
     if (!item) return;
 
@@ -2995,7 +3880,9 @@ function changeQuantity(id, amount) {
 }
 
 
-/* CART OPEN */
+/* =========================================================
+   CART OPEN
+========================================================= */
 
 document
     .getElementById("cartButton")
@@ -3006,7 +3893,9 @@ document
     });
 
 
-/* CART CLOSE */
+/* =========================================================
+   CART CLOSE
+========================================================= */
 
 document
     .getElementById("closeCart")
@@ -3017,15 +3906,20 @@ document
     });
 
 
-cartOverlay.addEventListener("click", event => {
+cartOverlay.addEventListener(
+    "click",
+    event => {
 
-    if (event.target === cartOverlay) {
+        if (
+            event.target === cartOverlay
+        ) {
 
-        cartOverlay.classList.remove("show");
+            cartOverlay.classList.remove("show");
+
+        }
 
     }
-
-});
+);
 
 
 /* =========================================================
@@ -3036,10 +3930,12 @@ function renderReviews() {
 
     reviewsList.innerHTML = "";
 
+
     REVIEWS.forEach(review => {
 
         const div =
             document.createElement("div");
+
 
         div.className = "review";
 
@@ -3052,19 +3948,27 @@ function renderReviews() {
         div.innerHTML = `
 
             <div class="review-stars">
+
                 ${stars}
+
             </div>
 
+
             <p>
+
                 "${review.text}"
+
             </p>
 
+
             <div class="customer">
+
 
                 <img
                     src="${review.image}"
                     alt="${review.name}"
                 >
+
 
                 <div>
 
@@ -3072,11 +3976,13 @@ function renderReviews() {
                         ${review.name}
                     </strong>
 
+
                     <small>
                         ${review.role}
                     </small>
 
                 </div>
+
 
             </div>
 
@@ -3110,17 +4016,13 @@ function updateTimer() {
 
     if (difference <= 0) {
 
-        document.getElementById("days")
-            .textContent = "00";
+        ["days","hours","minutes","seconds"]
+            .forEach(id => {
 
-        document.getElementById("hours")
-            .textContent = "00";
+                document.getElementById(id)
+                    .textContent = "00";
 
-        document.getElementById("minutes")
-            .textContent = "00";
-
-        document.getElementById("seconds")
-            .textContent = "00";
+            });
 
         return;
 
@@ -3178,7 +4080,10 @@ function updateTimer() {
 
 updateTimer();
 
-setInterval(updateTimer,1000);
+setInterval(
+    updateTimer,
+    1000
+);
 
 
 /* =========================================================
@@ -3186,11 +4091,11 @@ setInterval(updateTimer,1000);
 ========================================================= */
 
 document
-    .getElementById("shopNow")
+    .getElementById("orderNow")
     .addEventListener("click", () => {
 
         document
-            .getElementById("products")
+            .getElementById("foods")
             .scrollIntoView({
                 behavior:"smooth"
             });
@@ -3211,16 +4116,23 @@ document
     });
 
 
-/* DEAL BUTTON */
+/* =========================================================
+   DEAL BUTTON
+========================================================= */
 
 document
     .getElementById("dealButton")
     .addEventListener("click", () => {
 
-        addToCart(2);
+        /*
+         * Product ID 1 is used as the demo
+         * burger deal.
+         */
+
+        addToCart(1);
 
         showToast(
-            "MacBook deal added to cart"
+            "🔥 Burger deal added to your order!"
         );
 
     });
@@ -3232,25 +4144,56 @@ document
 
 document
     .getElementById("newsletterForm")
-    .addEventListener("submit", event => {
+    .addEventListener(
+        "submit",
+        event => {
 
-        event.preventDefault();
-
-        const email =
-            document
-                .getElementById("email")
-                .value.trim();
+            event.preventDefault();
 
 
-        if (!email) return;
+            const email =
+                document
+                    .getElementById("email")
+                    .value
+                    .trim();
+
+
+            if (!email) return;
+
+
+            showToast(
+                "🎉 Welcome to QuickBite!"
+            );
+
+
+            event.target.reset();
+
+        }
+    );
+
+
+/* =========================================================
+   CHECKOUT
+========================================================= */
+
+document
+    .getElementById("checkoutButton")
+    .addEventListener("click", () => {
+
+        if (!cart.length) {
+
+            showToast(
+                "Please add food to your order first"
+            );
+
+            return;
+
+        }
 
 
         showToast(
-            "🎉 Thanks for subscribing!"
+            "Checkout page coming soon 🚀"
         );
-
-
-        event.target.reset();
 
     });
 
@@ -3262,6 +4205,7 @@ document
 document
     .getElementById("menuBtn")
     .addEventListener("click", () => {
+
 
         const nav =
             document.querySelector(".nav-links");
@@ -3300,10 +4244,34 @@ document
 
 
 /* =========================================================
+   CLOSE MOBILE MENU AFTER CLICK
+========================================================= */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (window.innerWidth <= 1100) {
+
+                document
+                    .querySelector(".nav-links")
+                    .style.display = "none";
+
+            }
+
+        });
+
+    });
+
+
+/* =========================================================
    YEAR
 ========================================================= */
 
-document.getElementById("year")
+document
+    .getElementById("year")
     .textContent =
     new Date().getFullYear();
 
