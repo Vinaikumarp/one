@@ -1908,13 +1908,13 @@ footer {
 <div class="container header-main">
 
     <button class="menu-btn" id="menuBtn">
-        <i class="fas fa-bars"></i>
+        <em class="fas fa-bars"></em>
     </button>
 
 
     <a href="#" class="logo">
 
-        <i class="fas fa-burger"></i>
+        <em class="fas fa-burger"></em>
 
         Quick<span>Bite</span>
 
