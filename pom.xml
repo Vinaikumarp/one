@@ -8,8 +8,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>in.javahome</groupId>
-    <artifactId>myweb</artifactId>
-    <version>8.9.4</version>
+    <artifactId>myweb</artifact
+    <version>8.9.5</version>
     <packaging>war</packaging>
 
     <name>Home myweb</name>
