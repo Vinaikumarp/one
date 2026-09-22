@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Credential App</title>
+<title>Welcome to fast food delivery service portal</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
@@ -1916,7 +1916,7 @@ footer {
 
         <em class="fas fa-burger"></em>
 
-        Quick<span>Bite</span>
+        Fast<span>delivery</span>
 
     </a>
 
